@@ -19,11 +19,14 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/scrolltotop.js" defer></script>
+    <script src="./js/detailData.js" defer></script>
 </head>
 
 <body>
     <!-- Page Preloder -->
-    <div id="preloder" class="preloder">
+    <div id="preloder" class="preloder active">
         <div class="loader"></div>
     </div>
 
@@ -43,7 +46,8 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li><a href="./index.html">Homepage</a></li>
-                                <li class="active"><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
+                                <li class="active"><a href="./categories.html">Categories <span
+                                            class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
                                         <li><a href="./categories.html">Categories</a></li>
                                     </ul>
@@ -87,7 +91,7 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="anime__details__pic set-bg" data-setbg="img/anime/details-pic.jpg">
-                            <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                            <div class="view"></div>
                         </div>
                     </div>
                     <div class="col-lg-9">
@@ -96,18 +100,18 @@
                                 <h3>Fate Stay Night: Unlimited Blade</h3>
                                 <span>フェイト／ステイナイト, Feito／sutei naito</span>
                             </div>
-   
+
                             <p>Every human inhabiting the world of Alcia is branded by a “Count” or a number written on
                                 their body. For Hina’s mother, her total drops to 0 and she’s pulled into the Abyss,
                                 never to be seen again. But her mother’s last words send Hina on a quest to find a
-                            legendary hero from the Waste War - the fabled Ace!</p>
+                                legendary hero from the Waste War - the fabled Ace!</p>
                             <div class="anime__details__widget">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <ul>
-                                            <li><span>Date aired:</span> Oct 02, 2019 to ?</li>
-                                            <li><span>Status:</span> Airing</li>
-                                            <li><span>Genre:</span> Action, Adventure, Fantasy, Magic</li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -118,58 +122,61 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Anime Section End -->
+    </section>
+    <!-- Anime Section End -->
 
-        <!-- Footer Section Begin -->
-        <footer class="footer">
-            <div class="page-up">
-                <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="footer__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                        </div>
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="page-up">
+            <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="footer__nav">
-                            <ul>
-                                <li class="active"><a href="./index.html">Homepage</a></li>
-                                <li><a href="./categories.html">Categories</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer__nav">
+                        <ul>
+                            <li class="active"><a href="./index.html">Homepage</a></li>
+                            <li><a href="./categories.html">Categories</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-3">
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+                <div class="col-lg-3">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This template is made with <i class="fa fa-heart"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
 
-                      </div>
-                  </div>
-              </div>
-          </footer>
-          <!-- Footer Section End -->
-
-          <!-- Search model Begin -->
-          <div class="search-model">
-            <div class="h-100 d-flex flex-column align-items-center justify-content-start pt-5">
-                <div class="search-close-switch"><i class="icon_close"></i></div>
-                <form class="search-model-form pt-5">
-                    <input type="text" id="search-input" placeholder="Search here.....">
-                </form>
-                <div class="serach-model-result d-flex flex-column align-items-center">
-                    <a class="pt-2 mt-4">Первая</a>
-                    <a class="pt-2 mt-4">Вторая</a>
-                    <a class="pt-2 mt-4">Третья</a>
-                    <a class="pt-2 mt-4">Четвертая</a>
                 </div>
             </div>
         </div>
-        <!-- Search model end -->
+    </footer>
+    <!-- Footer Section End -->
 
-        <!-- Js Plugins -->
-    </body>
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex flex-column align-items-center justify-content-start pt-5">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form pt-5">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+            <div class="serach-model-result d-flex flex-column align-items-center">
+            </div>
+        </div>
+    </div>
+    <!-- Search model end -->
 
-    </html>
+    <!-- Js Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest"></script>
+
+</body>
+
+</html>
